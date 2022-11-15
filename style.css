@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'PT Sans Caption';
+	src: url('../fonts/pt_sans_caption.eot'); 
+	src: url('../fonts/pt_sans_caption.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/pt_sans_caption.woff2') format('woff2'), 
+		url('../fonts/pt_sans_caption.woff') format('woff'),
+		url('../fonts/pt_sans_caption.ttf') format('truetype'),
+		url('../fonts/pt_sans_caption.svg#pt_sans_caption') format('svg'); 
+} 
+
+html {
+  font-family: 'PT Sans Caption', sans-serif;
+  letter-spacing: 0.01em;
+  color: #293848;
+}
+
+.container {
+  max-width: 1198px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(18, 167, 18);
+}
+
+.img-boxes {
+  width: 350px;   /* реальная ширина 552px*/
+  float: right;
+  margin-left: 20px;
+}
+
+.list {
+  padding-left: 30px;
+}
+
+p,
+li {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.square {
+  list-style-type: square;
+}

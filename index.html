@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>justify-content</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="container"> 
+  <header>
+    <img src="img/header_pic1.png" alt="картинка с названием justify-content">
+  </header>
+  <section>
+    <img src="https://habrastorage.org/webt/xz/jd/01/xzjd012ys6chgniakzq2rrxkcko.png" alt="расположение блоков в justify-content" class="img-boxes">
+    <h1>Шпаргалка по justify-content</h1>
+    <p>Это свойство определяет выравнивание вдоль главной оси. Оно помогает распределить дополнительный остаток свободного пространства, когда-либо все flex элементы в строке негибкие, либо гибкие, но достигли своего максимального размера. Это также обеспечивает некоторый контроль над выравниванием элементов, когда они переполняют линию.</p>
+    <h2>Значения свойств justify-content:</h2>
+    <ol class="list">
+      <li><strong>flex-start</strong>  (по умолчанию): элементы сдвинуты в начало flex-direction направления.</li>
+      <li><strong>flex-end</strong>: элементы сдвинуты ближе к концу flex направления.</li>
+      <li><strong>start</strong>: элементы сдвинуты к началу <strong>writing-mode</strong> направления.</li>
+      <li><strong>end</strong>: элементы сдвинуты в конце writing-mode направления.</li>
+      <li><strong>left</strong>: элементы сдвинуты по направлению к левому краю контейнера, если это не имеет смысла <strong>flex-direction</strong>, тогда он ведет себя как <strong>start</strong>.</li>
+      <li><strong>right</strong>: элементы сдвинуты по направлению к правому краю контейнера, если это не имеет смысла <strong>flex-direction</strong>, тогда он ведет себя как <strong>start</strong>.</li>
+      <li><strong>center</strong>: элементы центрированы вдоль линии</li>
+    </ol>
+    <h2>Так же есть не менее полезные значения, которые начинаются со слова "space":</h2>
+    <ul class="list">
+      <li class="square"><strong>space-between</strong>: элементы равномерно распределены по линии; первый элемент находится в начале строки, последний элемент в конце строки</li>
+      <li class="square"><strong>space-around</strong>: элементы равномерно распределены по линии с одинаковым пространством вокруг них. Обратите внимание, что визуально пространства не равны, так как все элементы имеют одинаковое пространство с обеих сторон. Первый элемент будет иметь одну единицу пространства напротив края контейнера, но две единицы пространства между следующим элементом, потому что у следующего элемента есть свой собственный интервал, который применяется.</li>
+      <li class="square"><strong>space-evenly</strong>: элементы распределяются таким образом, чтобы расстояние между любыми двумя элементами (и расстояние до краев) было одинаковым.</li>
+    </ul>
+    <p>Обратите внимание, что поддержка браузером этих значений имеет свои нюансы. Например, <strong>space-between</strong>  никогда не получал поддержку Edge, а start / end / left / right еще нет в Chrome. В MDN <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" target="blank">есть подробные графики</a> . Самые безопасные значения это <strong>flex-start</strong>, <strong>flex-end</strong> и <strong>center</strong>.</p>
+    <p>Есть также два дополнительных ключевых слова, которые вы можете связать с этими значениями: <strong>safe</strong> и <strong>unsafe</strong>. Использование <strong>safe</strong> гарантирует, что как бы вы ни занимались этим типом позиционирования, вы не сможете расположить элемент таким образом, чтобы он отображался за пределами экрана (например, сверху) так, чтобы содержимое тоже не могло быть прокручено (это называется «потеря данных»).</p>
+    <p>Вся информация была взята из статьи <a href="https://habr.com/ru/post/467049/" target="blank">"Полное руководство по Flexbox"</a></p>
+  </section>
+</body>
+</html>
